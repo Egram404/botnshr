@@ -16,17 +16,5 @@ console.log("a7bk egram");
 
 })
  
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(` 
-**
-سلام عليكم يا قلبي 
-
-لو سمحت ا ادخل السيرفر
-                               [ https://discord.gg/7vhfWTu ] 
-الدعووة خاصة لك ي قلبي ... [ ${member}  ]
-**`) 
-}).catch(console.error)
-})
 
 client.login(process.env.BOT_TOKEN);
